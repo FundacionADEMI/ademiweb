@@ -168,7 +168,7 @@
                <div class="android-card-container mdl-grid">
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-1.png">
+                        <img src="images/more-from-1-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Emprendedores</h4>
@@ -185,7 +185,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-2.png">
+                        <img src="images/more-from-2-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Empresas</h4>
@@ -202,7 +202,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-3.png">
+                        <img src="images/more-from-3-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Profesionales</h4>
@@ -219,7 +219,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-4.png">
+                        <img src="images/more-from-4-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Desarrollo Local</h4>
@@ -235,7 +235,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-5.png">
+                        <img src="images/more-from-5-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Centro de información</h4>
@@ -346,7 +346,7 @@
                   <p class="mdl-typography--font-light">© Copyright 2018 | Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</p>
                </div>
                <div class="mdl-mega-footer--bottom-section">
-                  <a class="android-link mdl-typography--font-light" href="">Novedades</a>
+                  <a class="android-link mdl-typography--font-light" href="">Noticias</a>
                   <a class="android-link mdl-typography--font-light" href="">Aula Virtual</a>
                   <a class="android-link mdl-typography--font-light" href="">¿Quiénes nos Integran?</a>
                   <a class="android-link mdl-typography--font-light" href="">Autoridades</a>
@@ -367,33 +367,23 @@
        $max_words: max number of words (not real words, HTML words)
        if <= 0: no limitation, if > 0 display at most $max_words words
     */
-   function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, $show_description = true, $max_words = 0, $cache_timeout = 7200, $cache_prefix = "/tmp/rss2html-")
-   {
-      
-   
-   
-   
-   
-    $result = "";
-   
-   
-   
-   
-       // get feeds and parse items
-       $rss = new DOMDocument();
-       
-       $cache_file = $cache_prefix . md5($feed_url);
-       // load from file or load content
-       if ($cache_timeout > 0 &&
-           is_file($cache_file) &&
-           (filemtime($cache_file) + $cache_timeout > time())) {
-               $rss->load($cache_file);
-       } else {
-           $rss->load($feed_url);
-           if ($cache_timeout > 0) {
-              
-           }
-       }
+function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, $show_description = true, $max_words = 0, $cache_timeout = 7200, $cache_prefix = "/tmp/rss2html-")
+{
+   $result = "";
+// get feeds and parse items
+     $rss = new DOMDocument();
+    $cache_file = $cache_prefix . md5($feed_url);
+    // load from file or load content
+    if ($cache_timeout > 0 &&
+        is_file($cache_file) &&
+        (filemtime($cache_file) + $cache_timeout > time())) {
+            $rss->load($cache_file);
+    } else {
+        $rss->load($feed_url);
+        if ($cache_timeout > 0) {
+            $rss->save($cache_file);
+        }
+    }
        $feed = array();
        foreach ($rss->getElementsByTagName('item') as $node) {
            $item = array (
