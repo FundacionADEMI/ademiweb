@@ -168,7 +168,7 @@
                <div class="android-card-container mdl-grid">
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-1.png">
+                        <img src="images/more-from-1-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Emprendedores</h4>
@@ -185,7 +185,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-2.png">
+                        <img src="images/more-from-2-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Empresas</h4>
@@ -202,7 +202,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-3.png">
+                        <img src="images/more-from-3-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Profesionales</h4>
@@ -219,7 +219,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-4.png">
+                        <img src="images/more-from-4-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Desarrollo Local</h4>
@@ -235,7 +235,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-5.png">
+                        <img src="images/more-from-5-p.png">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Centro de información</h4>
