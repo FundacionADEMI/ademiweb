@@ -352,7 +352,7 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
                      <div id="mini" class="mdl-card__supporting-text">
                      </div>
                      <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/category/reportes-economico/">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/centro-de-informacion/">
                         conoce <i class="material-icons">chevron_right</i>
                         </a>
                      </div>
@@ -385,7 +385,7 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
                <?php
                   // output RSS feed to HTML
                 
-                  output_rss_feed('http://feeds.systutorials.com/ericfeed', 4, true, true, 15);
+                  output_rss_feed('localhost/feed/', 4, true, true, 15);
                   ?>
               </div>
        </div>
