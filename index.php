@@ -18,6 +18,7 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
         (filemtime($cache_file) + $cache_timeout > time())) {
             $rss->load($cache_file);
     } else {
+       chmod("/tmp/", 755);
         $rss->load($feed_url);
         if ($cache_timeout > 0) {
             $rss->save($cache_file);
@@ -382,11 +383,11 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
             
            
             <div class="android-card-container mdl-grid">
-               <?php
-                  // output RSS feed to HTML
-                
-                  output_rss_feed('localhost/feed/', 4, true, true, 15);
-                  ?>
+              <?php
+              // output RSS feed to HTML
+              output_rss_feed('http://feeds.feedburner.com/Ademi', 4, true, true, 15);
+              ?>
+              
               </div>
        </div>
           
