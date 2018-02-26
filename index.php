@@ -6,10 +6,10 @@
        $max_words: max number of words (not real words, HTML words)
        if <= 0: no limitation, if > 0 display at most $max_words words
     */
-function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, $show_description = true, $max_words = 0, $cache_timeout = 7200, $cache_prefix = "/tmp/rss2html-")
-{
+   function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, $show_description = true, $max_words = 0, $cache_timeout = 7200, $cache_prefix = "/tmp/rss2html-")
+   {
    $result = "";
-// get feeds and parse items
+   // get feeds and parse items
      $rss = new DOMDocument();
     $cache_file = $cache_prefix . md5($feed_url);
     // load from file or load content
@@ -18,7 +18,6 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
         (filemtime($cache_file) + $cache_timeout > time())) {
             $rss->load($cache_file);
     } else {
-       chmod("/tmp/", 755);
         $rss->load($feed_url);
         if ($cache_timeout > 0) {
             $rss->save($cache_file);
@@ -80,7 +79,8 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
    
    $result .= '<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">';
    $result .= '<div class="mdl-card__media">';
-   $result .= '<img src="'.$img.'">';
+   $result .= '<img class="img-color" src="'.$img.'">';
+   #$result .= '<img src="images/more-from-noticias.png" style="height: 20px;">';
    $result .= '</div>';
    $result .= '<div class="mdl-card__title">';
    $result .= '<h4 class="mdl-card__title-text">'.$title.'</h4>';
@@ -106,8 +106,6 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
        echo get_rss_feed_as_html($feed_url, $max_item_cnt, $show_date, $show_description, $max_words);
    }
    ?>
-
-
 <!doctype html>
 <html lang="es">
    <head>
@@ -144,6 +142,9 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
          -webkit-font-feature-settings: 'liga';
          -webkit-font-smoothing: antialiased;
          }
+         .img-color{
+          height: 20px;
+         }
          #view-source {
          position: fixed;
          display: block;
@@ -159,8 +160,6 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
          .mdl-color-text--accent-contrast {
          color: rgb(255, 255, 255)!important;
          }
-      </style>
-      <style type="text/css">
          .android-wear-section {
          position: relative;
          background: url(images/portada.jpg) center top no-repeat;
@@ -169,6 +168,13 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
          background-position: center;
          height: 581px;
          }
+         .mdl-card:hover {
+          box-shadow: 0 0 5px black;
+         }
+
+
+
+         box-shadow: 0 0 8px black;
       </style>
       <title>Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</title>
       <link rel="canonical" href="https://ademi.org.ar/">
@@ -243,14 +249,6 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
             </nav>
          </div>
          <div class="android-content mdl-layout__content">
-            
-
-
-
-
-
-
-
             <!--destacado-->
             <div class="android-wear-section">
                <div class="android-wear-band">
@@ -269,11 +267,8 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
                </div>
             </div>
             <!--destacado-->
-          
-
-
+           
             <!--areas-->
-
             <div class="android-more-section">
                <div class="android-card-container mdl-grid">
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
@@ -358,18 +353,13 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
                         </a>
                      </div>
                   </div>
-              
                </div>
 
-  <!--areas-->
 
 
 
 
-
-
-
-
+               <!--areas-->
                <div class="android-customized-section">
                   <div class="android-customized-section-text">
                      <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Visita una lista de los programas que en ADEMI tenemos para vos!</div>
@@ -379,79 +369,102 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
                         <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
                      </p>
                   </div>
+               </div>
+               <div class="android-card-container mdl-grid">
+                  <?php
+                     // output RSS feed to HTML
+                     
+                     output_rss_feed('http://feeds.feedburner.com/fundacionademi', 4, true, true, 15);
+                     ?>
                </div>
             
-           
-            <div class="android-card-container mdl-grid">
-              <?php
-              // output RSS feed to HTML
-              output_rss_feed('http://feeds.feedburner.com/Ademi', 4, true, true, 15);
-              ?>
-              
-              </div>
-       </div>
-          
-               <div class="android-customized-section">
-                  <div class="android-customized-section-text">
-                     <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Visita una lista de los programas que en ADEMI tenemos para vos!</div>
-                     <p class="mdl-typography--font-light">
-                        Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-                        <br>
-                        <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-                     </p>
-                  </div>
+            <div class="android-customized-section">
+               <div class="android-customized-section-text">
+                  <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Visita una lista de los programas que en ADEMI tenemos para vos!</div>
+                  <p class="mdl-typography--font-light">
+                     Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+                     <br>
+                     <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+                  </p>
                </div>
-
-
-
-
-          <!--contacto-->
-               <div class="android-card-container mdl-grid">
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-6.png">
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Incubate</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1">
-                        impulsa tu idea
-                        <i class="material-icons">chevron_right</i>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-6.png">
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Dudas sobre Programas</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/contacto/">
-                        Contacto
-                        <i class="material-icons">chevron_right</i>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-7.png">
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Asistencia a Empresas</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
-                        Consultoria
-                        <i class="material-icons">chevron_right</i>
-                        </a>
-                     </div>
-                  </div>
             </div>
             <!--contacto-->
-            
+            <div class="android-card-container mdl-grid">
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-6.png">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Incubate</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1">
+                     impulsa tu idea
+                     <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+               </div>
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-6.png">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Dudas sobre Programas</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/contacto/">
+                     Contacto
+                     <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+               </div>
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-7.png">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Asistencia a Empresas</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
+                     Consultoria
+                     <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+               </div>
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-facebook.png">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Facebook</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
+                     Me Gusta
+                     <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+               </div>
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-twitter.png">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Twitter</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
+                     sigenos
+                     <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+                     <!--contacto-->
+            </div>
+   
             <footer class="android-footer mdl-mega-footer">
                <div class="mdl-mega-footer--middle-section">
                   <p class="mdl-typography--font-light">© Copyright 2018 | Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</p>
@@ -466,7 +479,6 @@ function get_rss_feed_as_html($feed_url, $max_item_cnt = 10, $show_date = true, 
          </div>
       </div>
       <a href="https://www.ademi.org.ar/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">NOTICIAS</a>
-
       <script src="material.min.js"></script>
    </body>
 </html>
