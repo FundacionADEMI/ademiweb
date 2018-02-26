@@ -79,7 +79,8 @@
    
    $result .= '<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">';
    $result .= '<div class="mdl-card__media">';
-   $result .= '<img src="'.$img.'">';
+   $result .= '<img class="img-color" src="'.$img.'">';
+   #$result .= '<img src="images/more-from-noticias.png" style="height: 20px;">';
    $result .= '</div>';
    $result .= '<div class="mdl-card__title">';
    $result .= '<h4 class="mdl-card__title-text">'.$title.'</h4>';
@@ -141,6 +142,9 @@
          -webkit-font-feature-settings: 'liga';
          -webkit-font-smoothing: antialiased;
          }
+         .img-color{
+          height: 20px;
+         }
          #view-source {
          position: fixed;
          display: block;
@@ -156,8 +160,6 @@
          .mdl-color-text--accent-contrast {
          color: rgb(255, 255, 255)!important;
          }
-      </style>
-      <style type="text/css">
          .android-wear-section {
          position: relative;
          background: url(images/portada.jpg) center top no-repeat;
@@ -166,6 +168,13 @@
          background-position: center;
          height: 581px;
          }
+         .mdl-card:hover {
+          box-shadow: 0 0 5px black;
+         }
+
+
+
+         box-shadow: 0 0 8px black;
       </style>
       <title>Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</title>
       <link rel="canonical" href="https://ademi.org.ar/">
@@ -365,7 +374,7 @@
                   <?php
                      // output RSS feed to HTML
                      
-                     output_rss_feed('localhost/feed/', 4, true, true, 15);
+                     output_rss_feed('http://feeds.feedburner.com/fundacionademi', 4, true, true, 15);
                      ?>
                </div>
             
