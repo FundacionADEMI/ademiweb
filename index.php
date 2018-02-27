@@ -111,6 +111,12 @@
    <head>
       <!-- Page styles-->
       <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="animate.css">
+      <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       <style type="text/css">
          /* latin */       
          @font-face {
@@ -168,9 +174,14 @@
          background-position: center;
          height: 581px;
          }
-         .mdl-card:hover {
-          box-shadow: 0 0 5px black;
-         }
+         
+        
+        .mdl-card:hover {
+   
+    animation-name: swing;
+      animation-duration: 1s;
+  
+}
 
 
 
