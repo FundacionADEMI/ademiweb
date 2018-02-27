@@ -179,7 +179,7 @@
         .mdl-card:hover {
    
     animation-name: swing;
-      animation-duration: 1s;
+      animation-duration: 0.5s;
   
 }
 
