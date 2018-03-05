@@ -312,9 +312,9 @@
                   <nav class="android-navigation mdl-navigation">
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/">INICIO</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/">NOTICIAS</a>
-                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">AREAS DE TRABAJO</a>
-                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/category/programas/">PROGRAMAS</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/calendario/">CALENDARIO</a>
+                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
+                     
                   </nav>
                </div>
                <span class="android-mobile-title mdl-layout-title">
@@ -325,10 +325,12 @@
          <div class="android-drawer mdl-layout__drawer">
             <nav class="mdl-navigation">
                <a class="mdl-navigation__link" href="https://ademi.org.ar/">INICIO</a>
-               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/">NOTICIAS</a>
-               <a class="mdl-navigation__link" href="">AREAS DE TRABAJO</a>
-               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/category/programas/">PROGRAMAS</a>
-               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/calendario/">CALENDARIO</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/emprendedores/">EMPRENDEDORES</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/empresas/">EMPRESAS</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/profesionales/">PROFESIONALES</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/desarrollo-local/">DESARROLLO LOCAL</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/centro-de-informacion/">CENTRO DE INFORMACION</a>
                <div class="android-drawer-separator"></div>
                <div class="android-drawer-separator"></div>
             </nav>
@@ -447,11 +449,11 @@
                <!--areas-->
                <div class="android-customized-section">
                   <div class="android-customized-section-text">
-                     <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Visita una lista de los programas que en ADEMI tenemos para vos!</div>
+                     <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">ADEMI articula el accionar del sector público, el privado y el del conocimiento. </div>
                      <p class="mdl-typography--font-light">
-                        Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+                        Dicha tarea implica el contacto con empresarios, emprendedores y profesionales para potenciar virtudes fundamentales para el desarrollo regional. 
                         <br>
-                        <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+                        <a href="https://ademi.org.ar/blog/institucional/" class="android-link mdl-typography--font-light">Institucional</a>
                      </p>
                   </div>
                </div>
@@ -465,11 +467,10 @@
             
             <div class="android-customized-section">
                <div class="android-customized-section-text">
-                  <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Visita una lista de los programas que en ADEMI tenemos para vos!</div>
-                  <p class="mdl-typography--font-light">
-                     Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+                  <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">ADEMI articula el accionar del sector público, el privado y el del conocimiento. </div>
+                  <p class="mdl-typography--font-light">Gestiona el acceso a las fuentes de conocimiento, innovación, y financiamiento: todas herramientas que permiten llevar las iniciativas personales o empresarias a proyectos concretos y sustentables en el tiempo.
                      <br>
-                     <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+                     <a href="" class="android-link mdl-typography--font-light">Quienes nos integran (Agregar enlase)</a>
                   </p>
                </div>
             </div>
