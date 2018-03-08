@@ -91,7 +91,7 @@
    $result .= '<div class="mdl-card__actions">';
    $result .= '<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="'.$link.'">';
    $result .= 'Ver mas';
-   $result .= '<i class="material-icons">chevron_right</i>';
+   $result .= ' ';
    $result .= '</a></div></div>';
    
    
@@ -168,7 +168,7 @@
          }
          .android-wear-section {
          position: relative;
-         background: url(images/portada.jpg) center top no-repeat;
+         background: url(images/portada.png) center top no-repeat;
          background-repeat: no-repeat;
          background-size: contain;
          background-position: center;
@@ -340,16 +340,17 @@
             <div class="android-wear-section">
                <div class="android-wear-band">
                   <div class="android-wear-band-text">
-                     <div class="mdl-typography--display-2 mdl-typography--font-thin">Titulo de evento</div>
-                     <p class="mdl-typography--headline mdl-typography--font-thin">
-                        texto descriptivo de evento
+                     <div class="mdl-typography--display-2 mdl-typography--font-thin" style="font-family: Arial Rounded MT">WORKSHOP</div>
+                     <p class="mdl-typography--headline mdl-typography--font-thin" style="font-family: Arial Rounded MT">
+                       Identificar fortalezas personales para generar oportunidades económicas.
                      </p>
-                     <p>
-                        <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                        texto del enlase
-                        <i class="material-icons">chevron_right</i>
-                        </a>
-                     </p>
+                   
+                      <a href="https://www.ademi.org.ar/blog/" target="_blank" style="font-family: Arial Rounded MT" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"> saber mas</a>
+
+
+
+                       
+                   
                   </div>
                </div>
             </div>
@@ -371,7 +372,7 @@
                      <div class="mdl-card__actions">
                         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/emprendedores">
                         comenza
-                        <i class="material-icons">chevron_right</i>
+                         
                         </a>
                      </div>
                   </div>
@@ -388,7 +389,7 @@
                      <div class="mdl-card__actions">
                         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/empresas/">
                         mejora
-                        <i class="material-icons">chevron_right</i>
+                         
                         </a>
                      </div>
                   </div>
@@ -403,9 +404,9 @@
                      </div>
                      <br>
                      <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://registro.ademi.org.ar/">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/profesionales/">
                         participa
-                        <i class="material-icons">chevron_right</i>
+                         
                         </a>
                      </div>
                   </div>
@@ -419,9 +420,9 @@
                      <div id="mini" class="mdl-card__supporting-text">
                      </div>
                      <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/category/reportes-economico/">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/desarrollo-local/">
                         integrate
-                        <i class="material-icons">chevron_right</i>
+                         
                         </a>
                      </div>
                   </div>
@@ -436,7 +437,7 @@
                      </div>
                      <div class="mdl-card__actions">
                         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/centro-de-informacion/">
-                        conoce <i class="material-icons">chevron_right</i>
+                        conoce  
                         </a>
                      </div>
                   </div>
@@ -449,7 +450,7 @@
                <!--areas-->
                <div class="android-customized-section">
                   <div class="android-customized-section-text">
-                     <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">ADEMI articula el accionar del sector público, el privado y el del conocimiento. </div>
+                     <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">ADEMI articulamos el accionar del sector público, el privado y el del conocimiento. </div>
                      <p class="mdl-typography--font-light">
                         Dicha tarea implica el contacto con empresarios, emprendedores y profesionales para potenciar virtudes fundamentales para el desarrollo regional. 
                         <br>
@@ -482,11 +483,11 @@
                   </div>
                   <div class="mdl-card__title">
                      <h4 class="mdl-card__title-text">Incubate</h4>
+
                   </div>
                   <div class="mdl-card__actions">
                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1">
-                     impulsa tu idea
-                     <i class="material-icons">chevron_right</i>
+                     impulsa tu idea 
                      </a>
                   </div>
                </div>
@@ -500,7 +501,7 @@
                   <div class="mdl-card__actions">
                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/contacto/">
                      Contacto
-                     <i class="material-icons">chevron_right</i>
+                      
                      </a>
                   </div>
                </div>
@@ -514,7 +515,7 @@
                   <div class="mdl-card__actions">
                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
                      Consultoria
-                     <i class="material-icons">chevron_right</i>
+                      
                      </a>
                   </div>
                </div>
@@ -528,7 +529,7 @@
                   <div class="mdl-card__actions">
                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
                      Me Gusta
-                     <i class="material-icons">chevron_right</i>
+                      
                      </a>
                   </div>
                </div>
@@ -542,7 +543,7 @@
                   <div class="mdl-card__actions">
                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
                      sigenos
-                     <i class="material-icons">chevron_right</i>
+                      
                      </a>
                   </div>
                </div>
