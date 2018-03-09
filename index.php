@@ -168,11 +168,11 @@
          }
          .android-wear-section {
          position: relative;
-         background: url(images/portada.png) center top no-repeat;
-         background-repeat: no-repeat;
-         background-size: contain;
-         background-position: center;
-         height: 581px;
+    background: url(images/portada.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    height: 581px;
          }
          
 
@@ -336,26 +336,38 @@
             </nav>
          </div>
          <div class="android-content mdl-layout__content">
+
+
+
+
+
+
+
+
+
             <!--destacado-->
+           
             <div class="android-wear-section">
-               <div class="android-wear-band">
+               <div class="android-wear-band" >
                   <div class="android-wear-band-text">
                      <div class="mdl-typography--display-2 mdl-typography--font-thin" style="font-family: Arial Rounded MT">WORKSHOP</div>
                      <p class="mdl-typography--headline mdl-typography--font-thin" style="font-family: Arial Rounded MT">
                        Identificar fortalezas personales para generar oportunidades económicas.
                      </p>
                    
-                      <a href="https://www.ademi.org.ar/blog/" target="_blank" style="font-family: Arial Rounded MT" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"> saber mas</a>
-
-
-
-                       
-                   
+                      <a href="https://www.ademi.org.ar/blog/" target="_blank" style="font-family: Arial Rounded MT" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"> saber mas</a>      
                   </div>
                </div>
             </div>
             <!--destacado-->
-           
+        
+
+
+
+
+
+
+
             <!--areas-->
             <div class="android-more-section">
                <div class="android-card-container mdl-grid">
@@ -548,6 +560,10 @@
                   </div>
                </div>
             </div>
+
+
+
+
 
                      <!--contacto-->
             </div>
