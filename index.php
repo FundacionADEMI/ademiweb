@@ -79,7 +79,7 @@
    
    $result .= '<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">';
    $result .= '<div class="mdl-card__media">';
-   $result .= '<img class="img-color" src="'.$img.'">';
+   $result .= '<img class="img-color" src="'.$img.'"alt="Identificador de area">';
    #$result .= '<img src="images/more-from-noticias.png" style="height: 20px;">';
    $result .= '</div>';
    $result .= '<div class="mdl-card__title">';
@@ -260,7 +260,7 @@
 
          box-shadow: 0 0 8px black;
       </style>
-      <title>Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</title>
+      <title>Agencia Para El Desarrollo Económico de Misiones</title>
       <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100783521-1"></script>
 <script>
@@ -270,17 +270,32 @@
 
   gtag('config', 'UA-100783521-1');
 </script>
-
+      <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Agencia Para El Desarrollo Económico de Misiones",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "La Rioja 1407 Esq. 25 de Mayo, Posadas MS.",
+          "addressLocality": "Posadas",
+          "addressRegion": "Misiones",
+          "postalCode": "3300"
+        },
+        "telephone": "03764431515"
+      }
+      </script>
       <link rel="canonical" href="https://ademi.org.ar/">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="La Agencia para el Desarrollo Económico de Misiones - ADEMI es una organización mixta que articula el accionar del sector público, privado y del conocimiento en la generación de oportunidades que promuevan el crecimiento sostenido de la economía Misionera.">
+      <meta name="description" content="La Agencia para el Desarrollo Económico de Misiones - ADEMI es una organización mixta que articula el accionar del sector público, privado y del conocimiento">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <meta property="og:image" content="https://ademi.org.ar/images/portada.png">
       <meta name="description" content="Agencia Para El Desarrollo Económico de Misiones">
       <meta property="og:locale" content="es_ES">
       <meta property="og:type" content="website">
       <meta property="og:title" content="Fundacion ADEMI - Agencia Para El Desarrollo Económico de Misiones">
-      <meta property="og:description" content="Agencia Para El Desarrollo Económico de Misiones">
+      <meta property="og:description" content="Articulando el talento empresario">
       <meta property="og:url" content="https://ademi.org.ar/">
       <meta property="og:site_name" content="Fundacion ADEMI">
       <meta name="twitter:card" content="summary">
@@ -289,6 +304,7 @@
       <meta name="twitter:site" content="@AgenciaADEMI">
    </head>
    <body>
+
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
          var js, fjs = d.getElementsByTagName(s)[0];
@@ -302,7 +318,7 @@
          <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
                <span class="android-title mdl-layout-title">
-               <img class="android-logo-image" src="images/logo.png">
+               <img class="android-logo-image" src="images/logo.png" alt="Logo ADEMI">
                </span>
                <!-- Add spacer, to align navigation to the right in desktop -->
                <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -327,7 +343,7 @@
                   </nav>
                </div>
                <span class="android-mobile-title mdl-layout-title">
-               <img class="android-logo-image" src="images/logo.png">
+               <img class="android-logo-image" src="images/logo.png" alt="Logo ADEMI">
                </span>
             </div>
          </div>
@@ -383,7 +399,7 @@
                <div class="android-card-container mdl-grid">
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-1-p.png">
+                        <img src="images/more-from-1-p.png" alt="Logo Emprendedores">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Emprendedores</h4>
@@ -400,7 +416,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-2-p.png">
+                        <img src="images/more-from-2-p.png" alt="Logo Empresas">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Empresas</h4>
@@ -417,7 +433,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-3-p.png">
+                        <img src="images/more-from-3-p.png" alt="Logo Profesionales">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Profesionales</h4>
@@ -434,7 +450,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-4-p.png">
+                        <img src="images/more-from-4-p.png" alt="Logo Desarrollo Local">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Desarrollo Local</h4>
@@ -450,7 +466,7 @@
                   </div>
                   <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                      <div class="mdl-card__media">
-                        <img src="images/more-from-5-p.png">
+                        <img src="images/more-from-5-p.png" alt="Logo Centro de información">
                      </div>
                      <div class="mdl-card__title">
                         <h4 class="mdl-card__title-text">Centro de información</h4>
@@ -501,7 +517,7 @@
             <div class="android-card-container mdl-grid">
                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media">
-                     <img src="images/more-from-6.png">
+                     <img src="images/more-from-6.png" alt="Logo Incubate">
                   </div>
                   <div class="mdl-card__title">
                      <h4 class="mdl-card__title-text">Incubate</h4>
@@ -515,7 +531,7 @@
                </div>
                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media">
-                     <img src="images/more-from-7.png">
+                     <img src="images/more-from-7.png" alt="Logo Contacto Empresas">
                   </div>
                   <div class="mdl-card__title">
                      <h4 class="mdl-card__title-text">Asistencia a Empresas</h4>
@@ -529,7 +545,7 @@
                </div>
                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media">
-                     <img src="images/more-from-8.jpg">
+                     <img src="images/more-from-8.jpg" alt="Logo YouTube">
                   </div>
                   <div class="mdl-card__title">
                      <h4 class="mdl-card__title-text">YouTube</h4>
@@ -543,7 +559,7 @@
                
                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media">
-                     <img src="images/more-from-facebook.png">
+                     <img src="images/more-from-facebook.png" alt="Logo Facebook">
                   </div>
                   <div class="mdl-card__title">
                      <h4 class="mdl-card__title-text">Facebook</h4>
@@ -557,7 +573,7 @@
                </div>
                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media">
-                     <img src="images/more-from-twitter.png">
+                     <img src="images/more-from-twitter.png" alt="Logo Twitter" >
                   </div>
                   <div class="mdl-card__title">
                      <h4 class="mdl-card__title-text">Twitter</h4>
@@ -579,10 +595,10 @@
             </div>
    <center style="background-color: #737373;">
     <ul class="actions" style="padding-left: 0px;">
-            <a href="https://ademi.org.ar/aulavirtual/"><img src="images/Aula_Pie.png" alt="" width="200"></a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1"><img src="images/Incubate_Pie.png" alt="" width="200"></a>
-            <a href="http://registro.ademi.org.ar/"><img src="images/Profesionales_Pie.png" alt="" width="200"></a>
-            <a href="https://www.pymesmisiones.com.ar/"><img src="images/PymesMisiones_Pie.png" alt="" width="200"></a>
+            <a href="https://ademi.org.ar/aulavirtual/"><img src="images/Aula_Pie.png" alt="Logo Aula Virtual" width="200"></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1"><img src="images/Incubate_Pie.png" alt="Logo Incubate" width="200"></a>
+            <a href="http://registro.ademi.org.ar/"><img src="images/Profesionales_Pie.png" alt="Logo Profesionales" width="200"></a>
+            <a href="https://www.pymesmisiones.com.ar/"><img src="images/PymesMisiones_Pie.png" alt="Logo Pymes Misiones" width="200"></a>
     </ul>   
 </center> 
             <footer class="android-footer mdl-mega-footer">
