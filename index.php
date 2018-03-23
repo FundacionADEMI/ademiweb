@@ -176,6 +176,16 @@
          }
          
 
+         @media screen and (max-width:760px) {
+           .android-wear-section {
+            height: 500px;
+         }
+         @media screen and (max-width:500px) {
+           .android-wear-section {
+            height: 450px;
+         }
+    }
+
 
 @-webkit-keyframes swing {
   20% {
@@ -239,12 +249,11 @@
 }
 
 
-        
-        .mdl-card:hover {
+      .mdl-card:hover {
    
     animation-name: swing;
       animation-duration: 0.5s;
-  
+ 
 }
 
 
@@ -350,12 +359,13 @@
             <div class="android-wear-section">
                <div class="android-wear-band" >
                   <div class="android-wear-band-text">
-                     <div class="mdl-typography--display-2 mdl-typography--font-thin" style="font-family: Arial Rounded MT">WORKSHOP</div>
-                     <p class="mdl-typography--headline mdl-typography--font-thin" style="font-family: Arial Rounded MT">
-                       Identificar fortalezas personales para generar oportunidades económicas.
+                    <!-- <div class="mdl-typography--display-2 mdl-typography--font-thin" >Aula Virtual ADEMI</div>-->
+           
+                     <p class="mdl-typography--headline mdl-typography--font-thin" style="text-shadow: 0 0 20px black;">
+                       Herramienta que busca facilitar el acceso a entrenamientos para emprendedores, fortaleciendo la idea para transformarla en negocios que sean rentables 
                      </p>
                    
-                      <a href="https://www.ademi.org.ar/blog/" target="_blank" style="font-family: Arial Rounded MT" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"> saber mas</a>      
+                      <a href="https://www.ademi.org.ar/aulavirtual/" target="_blank" style="font-family: Arial Rounded MT" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"> saber mas</a>      
                   </div>
                </div>
             </div>
@@ -383,7 +393,7 @@
                      <br>
                      <div class="mdl-card__actions">
                         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/emprendedores">
-                        comenza
+                        comenzá
                          
                         </a>
                      </div>
@@ -400,7 +410,7 @@
                      <br>
                      <div class="mdl-card__actions">
                         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/empresas/">
-                        mejora
+                        mejorá
                          
                         </a>
                      </div>
@@ -417,7 +427,7 @@
                      <br>
                      <div class="mdl-card__actions">
                         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/profesionales/">
-                        participa
+                        participá
                          
                         </a>
                      </div>
@@ -449,7 +459,7 @@
                      </div>
                      <div class="mdl-card__actions">
                         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/centro-de-informacion/">
-                        conoce  
+                        conocé 
                         </a>
                      </div>
                   </div>
@@ -483,7 +493,7 @@
                   <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">ADEMI articula el accionar del sector público, el privado y el del conocimiento. </div>
                   <p class="mdl-typography--font-light">Gestiona el acceso a las fuentes de conocimiento, innovación, y financiamiento: todas herramientas que permiten llevar las iniciativas personales o empresarias a proyectos concretos y sustentables en el tiempo.
                      <br>
-                     <a href="" class="android-link mdl-typography--font-light">Quienes nos integran (Agregar enlase)</a>
+                     <a href="https://ademi.org.ar/blog/institucional/" class="android-link mdl-typography--font-light">Institucional</a>
                   </p>
                </div>
             </div>
@@ -499,21 +509,7 @@
                   </div>
                   <div class="mdl-card__actions">
                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1">
-                     impulsa tu idea 
-                     </a>
-                  </div>
-               </div>
-               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                  <div class="mdl-card__media">
-                     <img src="images/more-from-6.png">
-                  </div>
-                  <div class="mdl-card__title">
-                     <h4 class="mdl-card__title-text">Dudas sobre Programas</h4>
-                  </div>
-                  <div class="mdl-card__actions">
-                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/contacto/">
-                     Contacto
-                      
+                     impulsá tu idea 
                      </a>
                   </div>
                </div>
@@ -533,13 +529,27 @@
                </div>
                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media">
+                     <img src="images/more-from-8.jpg">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">YouTube</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.youtube.com/user/FundacionADEMI">
+                     Suscríbete
+                     </a>
+                  </div>
+               </div>
+               
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
                      <img src="images/more-from-facebook.png">
                   </div>
                   <div class="mdl-card__title">
                      <h4 class="mdl-card__title-text">Facebook</h4>
                   </div>
                   <div class="mdl-card__actions">
-                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.facebook.com/fundacion.ademi">
                      Me Gusta
                       
                      </a>
@@ -553,8 +563,8 @@
                      <h4 class="mdl-card__title-text">Twitter</h4>
                   </div>
                   <div class="mdl-card__actions">
-                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
-                     sigenos
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/agenciaademi">
+                     SEGINOS
                       
                      </a>
                   </div>
@@ -580,10 +590,9 @@
                   <p class="mdl-typography--font-light">© Copyright 2018 | Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</p>
                </div>
                <div class="mdl-mega-footer--bottom-section">
-                  <a class="android-link mdl-typography--font-light" href="">Novedades</a>
-                  <a class="android-link mdl-typography--font-light" href="">Aula Virtual</a>
-                  <a class="android-link mdl-typography--font-light" href="">¿Quiénes nos Integran?</a>
-                  <a class="android-link mdl-typography--font-light" href="">Autoridades</a>
+                  <a class="android-link mdl-typography--font-light" href="https://ademi.org.ar/aulavirtual/">Aula Virtual</a>
+                  <a class="android-link mdl-typography--font-light" href="https://ademi.org.ar/blog/institucional/quienes-nos-integran/">¿Quiénes nos Integran?</a>
+                  <a class="android-link mdl-typography--font-light" href="https://ademi.org.ar/blog/institucional/autoridades/">Autoridades</a>
                </div>
             </footer>
          </div>
