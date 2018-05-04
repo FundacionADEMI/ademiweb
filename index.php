@@ -475,83 +475,93 @@
                   </div>
                </div>
                <!--contacto-->
-               <div class="android-card-container mdl-grid">
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-6.png" alt="Logo Incubate">
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Incubate</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1">
-                        impulsá tu idea 
-                        </a>
-                     </div>
+
+
+
+<div class="android-card-container mdl-grid">
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-6.png" alt="Logo Incubate">
                   </div>
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-7.png" alt="Logo Contacto Empresas">
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Asistencia a Empresas</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&w=1">
-                        Consultoria
-                        </a>
-                     </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Incubate</h4>
+
                   </div>
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-8.jpg" alt="Logo YouTube">
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">YouTube</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.youtube.com/user/FundacionADEMI">
-                        Suscríbete
-                        </a>
-                     </div>
-                  </div>
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-facebook.png" alt="Logo Facebook">
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Facebook</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.facebook.com/fundacion.ademi">
-                        Me Gusta
-                        </a>
-                     </div>
-                  </div>
-                  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-                     <div class="mdl-card__media">
-                        <img src="images/more-from-twitter.png" alt="Logo Twitter" >
-                     </div>
-                     <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Twitter</h4>
-                     </div>
-                     <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/agenciaademi">
-                        SEGINOS
-                        </a>
-                     </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/emprendedores/idea-puesta-marcha/" data-upgraded=",MaterialButton">
+                     impulsá tu idea 
+                     </a>
                   </div>
                </div>
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-7.png" alt="Logo Contacto Empresas">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Asistencia a Empresas</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdSFF_fvOZvefARC1ZbGW1109faM8DQaBPibTde3wUYqvf8EA/viewform?c=0&amp;w=1" data-upgraded=",MaterialButton">
+                     Consultoria
+                      
+                     </a>
+                  </div>
+               </div>
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-8.jpg" alt="Logo YouTube">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">YouTube</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.youtube.com/user/FundacionADEMI" data-upgraded=",MaterialButton">
+                     Suscríbete
+                     </a>
+                  </div>
+               </div>
+               
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-facebook.png" alt="Logo Facebook">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Facebook</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://www.facebook.com/fundacion.ademi" data-upgraded=",MaterialButton">
+                     Me Gusta
+                      
+                     </a>
+                  </div>
+               </div>
+               <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                     <img src="images/more-from-twitter.png" alt="Logo Twitter">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Twitter</h4>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/agenciaademi" data-upgraded=",MaterialButton">
+                     SEGINOS
+                      
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            
                <!--contacto-->
             </div>
-            <center style="background-color: #737373;">
-               <ul class="actions" style="padding-left: 0px;">
-                  <a href="https://ademi.org.ar/aulavirtual/"><img src="images/Aula_Pie.png" alt="Logo Aula Virtual" width="200"></a>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSxcyFVx-TG6yHdikgG77zRpIx-wLnnz_VHtqxag_BdhwUqQ/viewform?c=0&w=1"><img src="images/Incubate_Pie.png" alt="Logo Incubate" width="200"></a>
-                  <a href="http://registro.ademi.org.ar/"><img src="images/Profesionales_Pie.png" alt="Logo Profesionales" width="200"></a>
-                  <a href="https://www.pymesmisiones.com.ar/"><img src="images/PymesMisiones_Pie.png" alt="Logo Pymes Misiones" width="200"></a>
-               </ul>
-            </center>
+            <center style=""><!--background-color: #737373;-->
+    <ul class="actions" style="padding-left: 0px;">
+            <a href="https://ademi.org.ar/aulavirtual/"><img src="images/Aula_Pie.png" alt="Logo Aula Virtual" width="200"></a>
+            <a href="https://ademi.org.ar/blog/emprendedores/idea-puesta-marcha/"><img src="images/Incubate_Pie.png" alt="Logo Incubate" width="200"></a>
+            <a href="http://registro.ademi.org.ar/"><img src="images/Profesionales_Pie.png" alt="Logo Profesionales" width="200"></a>
+            <a href="https://www.pymesmisiones.com.ar/"><img src="images/PymesMisiones_Pie.png" alt="Logo Pymes Misiones" width="200"></a>
+    </ul>   
+</center>
             <footer class="android-footer mdl-mega-footer">
                <div class="mdl-mega-footer--middle-section">
                   <p class="mdl-typography--font-light">© Copyright 2018 | Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</p>
