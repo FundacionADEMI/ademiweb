@@ -3,9 +3,8 @@
     "",
     "\\app",
     "\\app\\formulariogeo",
-    "\\app\\formulariogeo\\assets",
     "\\app\\formulariogeo\\assets\\demos"
   ],
-  "SelectedNode": "\\app\\formulariogeo\\conexion.php",
+  "SelectedNode": "\\app\\formulariogeo\\index.php",
   "PreviewInSolutionExplorer": false
 }

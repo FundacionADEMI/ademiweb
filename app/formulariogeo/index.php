@@ -13,6 +13,38 @@
          "use strict";!function(){function e(){getmdlSelect.init(".getmdl-select")}window.addEventListener?window.addEventListener("load",e,!1):window.attachEvent&&window.attachEvent("onload",e)}();var getmdlSelect={_defaultValue:{width:300},_addEventListeners:function(e){var t=e.querySelector("input"),n=e.querySelector('input[type="hidden"]'),l=e.querySelectorAll("li"),a=e.querySelector(".mdl-js-menu"),o=e.querySelector(".mdl-icon-toggle__label"),i="",c="",s="",u=!1,d=function(o){var i=o.textContent.trim();if(t.value=i,l.forEach(function(e){e.classList.remove("selected")}),o.classList.add("selected"),e.MaterialTextfield.change(i),setTimeout(function(){e.MaterialTextfield.updateClasses_()},250),n.value=o.dataset.val||"",c=t.value,s=n.value,"createEvent"in document){var u=document.createEvent("HTMLEvents");u.initEvent("change",!1,!0),a.MaterialMenu.hide(),t.dispatchEvent(u)}else t.fireEvent("onchange")},r=function(){u=!1,t.value=c,n.value=s,e.querySelector(".mdl-menu__container").classList.contains("is-visible")||e.classList.remove("is-focused");var l=document.querySelectorAll(".getmdl-select .mdl-js-menu");[].forEach.call(l,function(e){e.MaterialMenu.hide()});var o=new Event("closeSelect");a.dispatchEvent(o)};document.body.addEventListener("click",r,!1),e.onkeydown=function(l){9==l.keyCode&&(t.value=c,n.value=s,a.MaterialMenu.hide(),e.classList.remove("is-focused"))},t.onfocus=function(e){a.MaterialMenu.show(),a.focus(),u=!0},t.onblur=function(e){e.stopPropagation()},t.onclick=function(t){t.stopPropagation(),a.classList.contains("is-visible")?(a.MaterialMenu.hide(),u=!1):(a.MaterialMenu.show(),r(),e.classList.add("is-focused"),u=!0)},t.onkeydown=function(l){27==l.keyCode&&(t.value=c,n.value=s,a.MaterialMenu.hide(),e.MaterialTextfield.onBlur_(),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i=""))},a.addEventListener("closeSelect",function(l){t.value=c,n.value=s,e.classList.remove("is-focused"),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i="")}),a.onkeydown=function(l){27==l.keyCode&&(t.value=c,n.value=s,e.classList.remove("is-focused"),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i=""))},o&&(o.onclick=function(l){l.stopPropagation(),u?(a.MaterialMenu.hide(),u=!1,e.classList.remove("is-focused"),e.MaterialTextfield.onBlur_(),t.value=c,n.value=s):(r(),e.MaterialTextfield.onFocus_(),t.focus(),a.MaterialMenu.show(),u=!0)}),[].forEach.call(l,function(n){n.onfocus=function(){e.classList.add("is-focused");var l=n.textContent.trim();t.value=l,e.classList.contains("mdl-textfield--floating-label")||""!=i||(i=e.querySelector(".mdl-textfield__label").textContent.trim(),e.querySelector(".mdl-textfield__label").textContent="")},n.onclick=function(){d(n)},n.dataset.selected&&d(n)})},init:function(e){var t=document.querySelectorAll(e);[].forEach.call(t,function(e){getmdlSelect._addEventListeners(e),componentHandler.upgradeElement(e),componentHandler.upgradeElement(e.querySelector("ul"))})}};
          //# sourceMappingURL=getmdl-select.min.js.map
       </script>
+      <style type="text/css">
+         /* latin */       
+         @font-face {
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 400;
+         src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+         }
+         /* fallback */   
+         @font-face {
+         font-family: 'Material Icons';
+         font-style: normal;
+         font-weight: 400;
+         src: url(https://fonts.gstatic.com/s/materialicons/v36/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+         }
+         .material-icons {
+         font-family: 'Material Icons';
+         font-weight: normal;
+         font-style: normal;
+         font-size: 24px;
+         line-height: 1;
+         letter-spacing: normal;
+         text-transform: none;
+         display: inline-block;
+         white-space: nowrap;
+         word-wrap: normal;
+         direction: ltr;
+         -webkit-font-feature-settings: 'liga';
+         -webkit-font-smoothing: antialiased;
+         }
+      </style>
       <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
@@ -77,70 +109,69 @@
    </head>
    <body>
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-         <div class="mdl-layout__header-row">
-            <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="../../images/logo.png" alt="Logo ADEMI">
-            </span>
-            <!-- Add spacer, to align navigation to the right in desktop -->
-            <div class="android-header-spacer mdl-layout-spacer"></div>
-            <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-               <form role="search" method="get" class="search-form" action="https://ademi.org.ar/blog/">
-                  <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp" data-upgraded=",MaterialButton">
-                  <i class="material-icons">search</i>
-                  </label>
-                  <div class="mdl-textfield__expandable-holder">
-                     <input class="mdl-textfield__input" type="text" value="" name="s" id="fixed-header-drawer-exp">
-                  </div>
-               </form>
+         <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+               <span class="android-title mdl-layout-title">
+               <img class="android-logo-image" src="../../images/logo.png" alt="Logo ADEMI">
+               </span>
+               <!-- Add spacer, to align navigation to the right in desktop -->
+               <div class="android-header-spacer mdl-layout-spacer"></div>
+               <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                  <form role="search" method="get" class="search-form" action="https://ademi.org.ar/blog/">
+                     <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp" data-upgraded=",MaterialButton">
+                     <i class="material-icons">search</i>
+                     </label>
+                     <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" value="" name="s" id="fixed-header-drawer-exp">
+                     </div>
+                  </form>
+               </div>
+               <!-- Navigation -->
+               <div class="android-navigation-container">
+                  <nav class="android-navigation mdl-navigation">
+                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/">INICIO</a>
+                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/">NOTICIAS</a>
+                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/calendario/">CALENDARIO</a>
+                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
+                  </nav>
+               </div>
+               <span class="android-mobile-title mdl-layout-title">
+               <a href="https://ademi.org.ar/">
+               <img class="android-logo-image" src="../../images/logo.png" alt="Logo ADEMI">
+               </a>
+               </span>
             </div>
-            <!-- Navigation -->
-            <div class="android-navigation-container">
-               <nav class="android-navigation mdl-navigation">
-                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/">INICIO</a>
-                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/">NOTICIAS</a>
-                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/calendario/">CALENDARIO</a>
-                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
-               </nav>
-            </div>
-            <span class="android-mobile-title mdl-layout-title">
-            <a href="https://ademi.org.ar/">
-            <img class="android-logo-image" src="../../images/logo.png" alt="Logo ADEMI">
-            </a>
-            </span>
          </div>
-      </div>
-      <div class="android-drawer mdl-layout__drawer">
-         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="https://ademi.org.ar/">INICIO</a>
-            <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
-            <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/emprendedores/">EMPRENDEDORES</a>
-            <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/empresas/">EMPRESAS</a>
-            <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/profesionales/">PROFESIONALES</a>
-            <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/desarrollo-local/">DESARROLLO LOCAL</a>
-            <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/centro-de-informacion/">CENTRO DE INFORMACION</a>
-            <div class="android-drawer-separator"></div>
-            <div class="android-drawer-separator"></div>
-         </nav>
-      </div>
-      <div class="android-content mdl-layout__content">
-         <br>
-         <br>
-         <!-- Wide card with share menu button -->
-         <style>
-            .demo-card-wide.mdl-card {
-            width: 512px;
-            }
-            .demo-card-wide > .mdl-card__title {
-            color: #fff;
-            height: 176px;
-            background: url('assets/demos/welcome_card.png') center / cover;
-            }
-            .demo-card-wide > .mdl-card__menu {
-            color: #fff;
-            }
-         </style>
-         <center>
+         <div class="android-drawer mdl-layout__drawer">
+            <nav class="mdl-navigation">
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/">INICIO</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/emprendedores/">EMPRENDEDORES</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/empresas/">EMPRESAS</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/profesionales/">PROFESIONALES</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/desarrollo-local/">DESARROLLO LOCAL</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/centro-de-informacion/">CENTRO DE INFORMACION</a>
+               <div class="android-drawer-separator"></div>
+               <div class="android-drawer-separator"></div>
+            </nav>
+         </div>
+         <div class="android-content mdl-layout__content">
+            <br>
+            <br>
+            <!-- Wide card with share menu button -->
+            <style>
+               .demo-card-wide.mdl-card {
+               width: 512px;
+               }
+               .demo-card-wide > .mdl-card__title {
+               color: #fff;
+               height: 176px;
+               background: url('assets/demos/welcome_card.png') center / cover;
+               }
+               .demo-card-wide > .mdl-card__menu {
+               color: #fff;
+               }
+            </style>
             <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                <div class="mdl-card__title">
                   <h2 class="mdl-card__title-text">Welcome</h2>
@@ -223,104 +254,11 @@
                   </div>
                   <div id='latitud'></div>
                   <div id='longitud'></div>
+
                </form>
-         </center>
-         <!--areas-->
-         <div class="android-more-section">
-         <div class="android-card-container mdl-grid">
-         <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-         <div class="mdl-card__media">
-         <img src="../../images/more-from-1-p.png" alt="Logo Emprendedores">
+            </div>
          </div>
-         <div class="mdl-card__title">
-         <h4 class="mdl-card__title-text">Emprendedores</h4>
-         </div>
-         <div id="mini" class="mdl-card__supporting-text">
-         </div>
-         <br>
-         <div class="mdl-card__actions">
-         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/emprendedores">
-         comenzá
-         </a>
-         </div>
-         </div>
-         <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-         <div class="mdl-card__media">
-         <img src="../../images/more-from-2-p.png" alt="Logo Empresas">
-         </div>
-         <div class="mdl-card__title">
-         <h4 class="mdl-card__title-text">Empresas</h4>
-         </div>
-         <div id="mini" class="mdl-card__supporting-text">
-         </div>
-         <br>
-         <div class="mdl-card__actions">
-         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/empresas/">
-         mejorá
-         </a>
-         </div>
-         </div>
-         <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-         <div class="mdl-card__media">
-         <img src="../../images/more-from-3-p.png" alt="Logo Profesionales">
-         </div>
-         <div class="mdl-card__title">
-         <h4 class="mdl-card__title-text">Profesionales</h4>
-         </div>
-         <div id="mini" class="mdl-card__supporting-text">
-         </div>
-         <br>
-         <div class="mdl-card__actions">
-         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/profesionales/">
-         participá
-         </a>
-         </div>
-         </div>
-         <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-         <div class="mdl-card__media">
-         <img src="../../images/more-from-4-p.png" alt="Logo Desarrollo Local">
-         </div>
-         <div class="mdl-card__title">
-         <h4 class="mdl-card__title-text">Desarrollo Local</h4>
-         </div>
-         <div id="mini" class="mdl-card__supporting-text">
-         </div>
-         <div class="mdl-card__actions">
-         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/desarrollo-local/">
-         integrate
-         </a>
-         </div>
-         </div>
-         <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-         <div class="mdl-card__media">
-         <img src="../../images/more-from-5-p.png" alt="Logo Centro de información">
-         </div>
-         <div class="mdl-card__title">
-         <h4 class="mdl-card__title-text">Centro de información</h4>
-         </div>
-         <div id="mini" class="mdl-card__supporting-text">
-         </div>
-         <div class="mdl-card__actions">
-         <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/centro-de-informacion/">
-         conocé 
-         </a>
-         </div>
-         </div>
-         </div>
-         <!--areas-->
-         </div>
-         <footer class="android-footer mdl-mega-footer">
-         <div class="mdl-mega-footer--middle-section">
-         <p class="mdl-typography--font-light">© Copyright 2018 | Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</p>
-         </div>
-         <div class="mdl-mega-footer--bottom-section">
-         <a class="android-link mdl-typography--font-light" href="https://ademi.org.ar/aulavirtual/">Aula Virtual</a>
-         <a class="android-link mdl-typography--font-light" href="https://ademi.org.ar/blog/institucional/quienes-nos-integran/">¿Quiénes nos Integran?</a>
-         <a class="android-link mdl-typography--font-light" href="https://ademi.org.ar/blog/institucional/autoridades/">Autoridades</a>
-         <a class="android-link mdl-typography--font-light" href="https://plus.google.com/u/1/+FundacionADEMI">Google+</a>
-         </div>
-         </footer>
-         </div>
+      </div>
       </div>
       <a href="https://www.ademi.org.ar/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">NOTICIAS</a>
       <script src="../../material.min.js"></script>
@@ -334,19 +272,12 @@
               var latitud = position.coords.latitude;
               var longitud = position.coords.longitude;
               var div = document.getElementById("latitud");
-				{
-			  div.innerHTML = '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="latitud" value="'+ latitud +'" readonly="readonly"><label class="mdl-textfield__label" for="sample3">'+ latitud +'</label></div>';
-               
-         
+         {
+         div.innerHTML = '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="latitud" value="'+ latitud +'" readonly="readonly"><label class="mdl-textfield__label" for="sample3">'+ latitud +'</label></div>';
          }
-         
-         
          var div = document.getElementById("longitud");
-		 
-             
-			div.innerHTML = '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="longitud" value="'+ longitud +'" readonly="readonly"><label class="mdl-textfield__label" for="sample3">'+ longitud +'</label></div>';
-              
-			}    
+         div.innerHTML = '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" type="text" name="longitud" value="'+ longitud +'" readonly="readonly"><label class="mdl-textfield__label" for="sample3">'+ longitud +'</label></div>';
+         }    
       </script>
       <script src="assets/js/main.js"></script>
    </body>
