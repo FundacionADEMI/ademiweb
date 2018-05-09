@@ -7,11 +7,9 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100783521-1"></script>
       <style>
          .getmdl-select{outline:none}.getmdl-select .mdl-textfield__input{cursor:pointer}.getmdl-select .selected{background-color:#ddd}.getmdl-select .mdl-icon-toggle__label{float:right;margin-top:-30px;color:rgba(0,0,0,0.4);transform:rotate(0);transition:transform 0.3s}.getmdl-select.is-focused .mdl-icon-toggle__label{color:#3f51b5;transform:rotate(180deg)}.getmdl-select .mdl-menu__container{width:100% !important;margin-top:2px}.getmdl-select .mdl-menu__container .mdl-menu{width:100%}.getmdl-select .mdl-menu__container .mdl-menu .mdl-menu__item{font-size:16px}.getmdl-select__fix-height .mdl-menu__container .mdl-menu{overflow-y:auto;max-height:288px !important}.getmdl-select__fix-height .mdl-menu.mdl-menu--top-left{bottom:auto;top:0}
-         /*# sourceMappingURL=getmdl-select.min.css.map */
       </style>
       <script>
          "use strict";!function(){function e(){getmdlSelect.init(".getmdl-select")}window.addEventListener?window.addEventListener("load",e,!1):window.attachEvent&&window.attachEvent("onload",e)}();var getmdlSelect={_defaultValue:{width:300},_addEventListeners:function(e){var t=e.querySelector("input"),n=e.querySelector('input[type="hidden"]'),l=e.querySelectorAll("li"),a=e.querySelector(".mdl-js-menu"),o=e.querySelector(".mdl-icon-toggle__label"),i="",c="",s="",u=!1,d=function(o){var i=o.textContent.trim();if(t.value=i,l.forEach(function(e){e.classList.remove("selected")}),o.classList.add("selected"),e.MaterialTextfield.change(i),setTimeout(function(){e.MaterialTextfield.updateClasses_()},250),n.value=o.dataset.val||"",c=t.value,s=n.value,"createEvent"in document){var u=document.createEvent("HTMLEvents");u.initEvent("change",!1,!0),a.MaterialMenu.hide(),t.dispatchEvent(u)}else t.fireEvent("onchange")},r=function(){u=!1,t.value=c,n.value=s,e.querySelector(".mdl-menu__container").classList.contains("is-visible")||e.classList.remove("is-focused");var l=document.querySelectorAll(".getmdl-select .mdl-js-menu");[].forEach.call(l,function(e){e.MaterialMenu.hide()});var o=new Event("closeSelect");a.dispatchEvent(o)};document.body.addEventListener("click",r,!1),e.onkeydown=function(l){9==l.keyCode&&(t.value=c,n.value=s,a.MaterialMenu.hide(),e.classList.remove("is-focused"))},t.onfocus=function(e){a.MaterialMenu.show(),a.focus(),u=!0},t.onblur=function(e){e.stopPropagation()},t.onclick=function(t){t.stopPropagation(),a.classList.contains("is-visible")?(a.MaterialMenu.hide(),u=!1):(a.MaterialMenu.show(),r(),e.classList.add("is-focused"),u=!0)},t.onkeydown=function(l){27==l.keyCode&&(t.value=c,n.value=s,a.MaterialMenu.hide(),e.MaterialTextfield.onBlur_(),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i=""))},a.addEventListener("closeSelect",function(l){t.value=c,n.value=s,e.classList.remove("is-focused"),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i="")}),a.onkeydown=function(l){27==l.keyCode&&(t.value=c,n.value=s,e.classList.remove("is-focused"),""!==i&&(e.querySelector(".mdl-textfield__label").textContent=i,i=""))},o&&(o.onclick=function(l){l.stopPropagation(),u?(a.MaterialMenu.hide(),u=!1,e.classList.remove("is-focused"),e.MaterialTextfield.onBlur_(),t.value=c,n.value=s):(r(),e.MaterialTextfield.onFocus_(),t.focus(),a.MaterialMenu.show(),u=!0)}),[].forEach.call(l,function(n){n.onfocus=function(){e.classList.add("is-focused");var l=n.textContent.trim();t.value=l,e.classList.contains("mdl-textfield--floating-label")||""!=i||(i=e.querySelector(".mdl-textfield__label").textContent.trim(),e.querySelector(".mdl-textfield__label").textContent="")},n.onclick=function(){d(n)},n.dataset.selected&&d(n)})},init:function(e){var t=document.querySelectorAll(e);[].forEach.call(t,function(e){getmdlSelect._addEventListeners(e),componentHandler.upgradeElement(e),componentHandler.upgradeElement(e.querySelector("ul"))})}};
-         //# sourceMappingURL=getmdl-select.min.js.map
       </script>
       <style type="text/css">
          /* latin */       
@@ -157,110 +155,121 @@
          </div>
          <div class="android-content mdl-layout__content">
             <br>
-            <br>
-            <!-- Wide card with share menu button -->
-            <style>
-               .demo-card-wide.mdl-card {
-               width: 512px;
-               }
-               .demo-card-wide > .mdl-card__title {
-               color: #fff;
-               height: 176px;
-               background: url('assets/demos/welcome_card.png') center / cover;
-               }
-               .demo-card-wide > .mdl-card__menu {
-               color: #fff;
-               }
-            </style>
-            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-               <div class="mdl-card__title">
-                  <h2 class="mdl-card__title-text">Welcome</h2>
-               </div>
-               <div class="mdl-card__supporting-text">
-                  Un aplicativo pensado, diseñado y ejecutado por la Agencia para el Desarrollo Económico de Misiones (ADEMI) en conjunto con profesionales de la provincia.
-               </div>
-               <form action="send.php">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" name="nombre">
-                     <label class="mdl-textfield__label" >Nombre</label>
+            <center>
+               <!-- Wide card with share menu button -->
+               <style>
+                  .demo-card-wide.mdl-card {
+                  width: 512px;
+                  }
+                  .demo-card-wide > .mdl-card__title {
+                  color: #fff;
+                  height: 176px;
+                  background: url('images/bg.jpg') center / cover;
+                  }
+                  .demo-card-wide > .mdl-card__menu {
+                  color: #fff;
+                  }
+               </style>
+               <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                     <h2 class="mdl-card__title-text">Formulario de registro al app de APP ADEMI</h2>
                   </div>
-                  <!-- Select with fixed height -->
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
-                     <input type="text" value="" class="mdl-textfield__input" id="sample5" readonly>
-                     <input type="hidden" value="" name="sample5">
-                     <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                     <label for="sample5" class="mdl-textfield__label">Country</label>
-                     <ul for="sample5" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                        <li class="mdl-menu__item" data-val="Aeropuertos">Aeropuertos</li>
-                        <li class="mdl-menu__item" data-val="Agencias de Autos">Agencias de Autos</li>
-                        <li class="mdl-menu__item" data-val="Alimentos">Alimentos</li>
-                        <li class="mdl-menu__item" data-val="Arte">Arte</li>
-                        <li class="mdl-menu__item" data-val="Bancos">Bancos</li>
-                        <li class="mdl-menu__item" data-val="Bebidas">Bebidas</li>
-                        <li class="mdl-menu__item" data-val="Biblioteca">Biblioteca</li>
-                        <li class="mdl-menu__item" data-val="Clubs">Clubs</li>
-                        <li class="mdl-menu__item" data-val="Comisarias">Comisarias</li>
-                        <li class="mdl-menu__item" data-val="Comunicación y Marketing">Comunicación y Marketing</li>
-                        <li class="mdl-menu__item" data-val="Deportes">Deportes</li>
-                        <li class="mdl-menu__item" data-val="Desarrollo de Software">Desarrollo de Software</li>
-                        <li class="mdl-menu__item" data-val="Electronica">Electronica</li>
-                        <li class="mdl-menu__item" data-val="Escuelas">Escuelas</li>
-                        <li class="mdl-menu__item" data-val="Estetica">Estetica</li>
-                        <li class="mdl-menu__item" data-val="Finanzas">Finanzas</li>
-                        <li class="mdl-menu__item" data-val="Fotografia">Fotografia</li>
-                        <li class="mdl-menu__item" data-val="Gasolinerias">Gasolinerias</li>
-                        <li class="mdl-menu__item" data-val="Hospedaje">Hospedaje</li>
-                        <li class="mdl-menu__item" data-val="Hospitales">Hospitales</li>
-                        <li class="mdl-menu__item" data-val="Ingenierías">Ingenierías</li>
-                        <li class="mdl-menu__item" data-val="Instrumentos Musicales">Instrumentos Musicales</li>
-                        <li class="mdl-menu__item" data-val="Joyas">Joyas</li>
-                        <li class="mdl-menu__item" data-val="Juegeteria">Juegeteria</li>
-                        <li class="mdl-menu__item" data-val="librería">librería</li>
-                        <li class="mdl-menu__item" data-val="Mascotas">Mascotas</li>
-                        <li class="mdl-menu__item" data-val="Mecánica del automotor">Mecánica del automotor</li>
-                        <li class="mdl-menu__item" data-val="Museos">Museos</li>
-                        <li class="mdl-menu__item" data-val="Oficina de Correo">Oficina de Correo</li>
-                        <li class="mdl-menu__item" data-val="Organismos Oficiales">Organismos Oficiales</li>
-                        <li class="mdl-menu__item" data-val="Presentes">Presentes</li>
-                        <li class="mdl-menu__item" data-val="Ropa">Ropa</li>
-                        <li class="mdl-menu__item" data-val="Servicio de limpieza">Servicio de limpieza</li>
-                        <li class="mdl-menu__item" data-val="Teatro">Teatro</li>
-                        <li class="mdl-menu__item" data-val="Universidades">Universidades</li>
-                     </ul>
+                  <div class="mdl-card__supporting-text">
+                     Un aplicativo pensado, diseñado y ejecutado por la Agencia para el Desarrollo Económico de Misiones (ADEMI) en conjunto con profesionales de la provincia.
                   </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" name="apellido">
-                     <label class="mdl-textfield__label" for="sample3">Apellido</label>
-                  </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="telefono">
-                     <label class="mdl-textfield__label" for="sample3">Telefono</label>
-                  </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text"  name="correo">
-                     <label class="mdl-textfield__label" for="sample3">Correo</label>
-                  </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" name="localidad">
-                     <label class="mdl-textfield__label" for="sample3">Localidad</label>
-                  </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" name="direccion">
-                     <label class="mdl-textfield__label" for="sample3">Dirección</label>
-                  </div>
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                     <input class="mdl-textfield__input" type="text" name="direccion">
-                     <label class="mdl-textfield__label" for="sample3">CUIT</label>
-                  </div>
-                  <div id='latitud'></div>
-                  <div id='longitud'></div>
+                  <form action="send.php" method="post">
+                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="nombre">
+                        <label class="mdl-textfield__label" >Nombre</label>
+                     </div>
+                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="apellido">
+                        <label class="mdl-textfield__label" for="sample3">Apellido</label>
+                     </div>
+                     <!-- Select with fixed height -->
+                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
+                        <input type="text" value="" class="mdl-textfield__input" id="rubro" readonly>
+                        <input type="hidden" value="" name="rubro">
+                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        <label for="rubro" class="mdl-textfield__label">Rubro</label>
+                        <ul for="rubro" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                           <li class="mdl-menu__item" data-val="Aeropuertos">Aeropuertos</li>
+                           <li class="mdl-menu__item" data-val="Agencias de Autos">Agencias de Autos</li>
+                           <li class="mdl-menu__item" data-val="Alimentos">Alimentos</li>
+                           <li class="mdl-menu__item" data-val="Arte">Arte</li>
+                           <li class="mdl-menu__item" data-val="Bancos">Bancos</li>
+                           <li class="mdl-menu__item" data-val="Bebidas">Bebidas</li>
+                           <li class="mdl-menu__item" data-val="Biblioteca">Biblioteca</li>
+                           <li class="mdl-menu__item" data-val="Clubs">Clubs</li>
+                           <li class="mdl-menu__item" data-val="Comisarias">Comisarias</li>
+                           <li class="mdl-menu__item" data-val="Comunicación y Marketing">Comunicación y Marketing</li>
+                           <li class="mdl-menu__item" data-val="Deportes">Deportes</li>
+                           <li class="mdl-menu__item" data-val="Desarrollo de Software">Desarrollo de Software</li>
+                           <li class="mdl-menu__item" data-val="Electronica">Electronica</li>
+                           <li class="mdl-menu__item" data-val="Escuelas">Escuelas</li>
+                           <li class="mdl-menu__item" data-val="Estetica">Estetica</li>
+                           <li class="mdl-menu__item" data-val="Finanzas">Finanzas</li>
+                           <li class="mdl-menu__item" data-val="Fotografia">Fotografia</li>
+                           <li class="mdl-menu__item" data-val="Gasolinerias">Gasolinerias</li>
+                           <li class="mdl-menu__item" data-val="Hospedaje">Hospedaje</li>
+                           <li class="mdl-menu__item" data-val="Hospitales">Hospitales</li>
+                           <li class="mdl-menu__item" data-val="Ingenierías">Ingenierías</li>
+                           <li class="mdl-menu__item" data-val="Instrumentos Musicales">Instrumentos Musicales</li>
+                           <li class="mdl-menu__item" data-val="Joyas">Joyas</li>
+                           <li class="mdl-menu__item" data-val="Juegeteria">Juegeteria</li>
+                           <li class="mdl-menu__item" data-val="librería">librería</li>
+                           <li class="mdl-menu__item" data-val="Mascotas">Mascotas</li>
+                           <li class="mdl-menu__item" data-val="Mecánica del automotor">Mecánica del automotor</li>
+                           <li class="mdl-menu__item" data-val="Museos">Museos</li>
+                           <li class="mdl-menu__item" data-val="Oficina de Correo">Oficina de Correo</li>
+                           <li class="mdl-menu__item" data-val="Organismos Oficiales">Organismos Oficiales</li>
+                           <li class="mdl-menu__item" data-val="Presentes">Presentes</li>
+                           <li class="mdl-menu__item" data-val="Ropa">Ropa</li>
+                           <li class="mdl-menu__item" data-val="Servicio de limpieza">Servicio de limpieza</li>
+                           <li class="mdl-menu__item" data-val="Teatro">Teatro</li>
+                           <li class="mdl-menu__item" data-val="Universidades">Universidades</li>
+                        </ul>
+                     </div>
 
-               </form>
-            </div>
+                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="telefono">
+                        <label class="mdl-textfield__label" for="telefono">Telefono</label>
+                     </div>
+
+                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text"  name="correo">
+                        <label class="mdl-textfield__label" for="correo">Correo</label>
+                     </div>
+
+                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="direccion">
+                        <label class="mdl-textfield__label" for="direccion">Dirección</label>
+                     </div>
+
+					 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="nombref">
+                        <label class="mdl-textfield__label" for="nombref">Nombre de tu Negocio</label>
+                     </div>
+
+					 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="cuit">
+                        <label class="mdl-textfield__label" for="cuit">CUIT</label>
+                     </div>
+                     
+                     <div id='latitud'></div>
+                     <div id='longitud'></div>
+                     <!-- Accent-colored raised button with ripple -->
+                     <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color: #008000;color: #ffffff;">
+                     enviar
+                     </button>
+                  </form>
+                  <br>
+                  <br>
+               </div>
+            </center>
+            <br>
          </div>
       </div>
-      </div>
-      <a href="https://www.ademi.org.ar/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">NOTICIAS</a>
       <script src="../../material.min.js"></script>
       <script type="text/javascript">
          if (navigator.geolocation) {

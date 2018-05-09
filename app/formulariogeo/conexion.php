@@ -3,3 +3,6 @@
     mysql_select_db("cl000468_geo",$conect) or die("Error con la conexion de base de datos");
 
 ?>
+
+INSERT INTO emprendedores (nombre,apellido,rubro,correo,telefono,direccion,nombref,cuit,latitud,longitud) 
+('$nombre', '$apellido','$rubro','$correo','$telefono','$direccion','$nombref','$cuit','$latitud','$longitud'); 
