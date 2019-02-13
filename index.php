@@ -325,16 +325,12 @@
                <!-- Navigation -->
                <div class="android-navigation-container">
                   <nav class="android-navigation mdl-navigation">
- <a class="mdl-navigation__link mdl-typography--text-uppercase"href="https://ademi.org.ar/blog/desarrollo-local/actividades/" style="color: #465b2a;"><!-- Number badge -->
-<span class="mdl-badge" data-badge="1">Concurso</span>
-</a>
-
+                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/aulavirtual/"><span class="mdl-badge" data-badge=" ">AULA VIRTUAL</span></a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/">INICIO</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/">NOTICIAS</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/calendario/">CALENDARIO</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://translate.google.com/translate?depth=1&hl=es&rurl=translate.google.com.ar&sl=es&sp=nmt4&tl=en&u=https://www.ademi.org.ar/&xid=17259,15700023,15700186,15700190,15700248">English</a>
-                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/aulavirtual/">AULA VIRTUAL</a>
                   </nav>
                </div>
                <span class="android-mobile-title mdl-layout-title">
@@ -354,8 +350,7 @@
                <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/profesionales/">PROFESIONALES</a>
                <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/desarrollo-local/">DESARROLLO LOCAL</a>
                <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/centro-de-informacion/">CENTRO DE INFORMACION</a>
-               <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/desarrollo-local/actividades/" style="color: #465b2a;">CONCURSO</a>
-               <a class="mdl-navigation__link" href="https://ademi.org.ar/aulavirtual/" style="color: #465b2a;">AULAVIRTUAL</a>
+               <a class="mdl-navigation__link" href="https://ademi.org.ar/aulavirtual/"><span class="mdl-badge" data-badge=" ">AULA VIRTUAL</span></a>
                <div class="android-drawer-separator"></div>
    
             </nav>
@@ -364,9 +359,9 @@
             <!--destacado-->
             <div class="android-wear-section">
                <div class="android-wear-band" >
-                  <div class="android-wear-band-text">
+                  <div class="android-wear-band-text" style="margin-left: 15%;">
                      <!-- <div class="mdl-typography--display-2 mdl-typography--font-thin" >Aula Virtual ADEMI</div>-->
-                     <p class="mdl-typography--headline mdl-typography--font-thin" style="text-shadow: 0 0 20px black;width: 500px;">
+                     <p class="mdl-typography--headline mdl-typography--font-thin" style="text-shadow: 0 0 20px black;width: 550px;">
                      El concurso De qué va a vivir mi pueblo II rescata el espíritu del emprendedor, social y visionario de los misioneros con el objetivo de identificar la Idea Inicial de Desarrollo Local propuestas por los Concursantes a partir de la Etapa de Formulación de cada Proyecto.                     </p>
                      <a href="https://ademi.org.ar/blog/concurso-de-que-va-vivir-mi-pueblo/" target="_blank" style="font-family: Arial Rounded MT" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Entrar</a>      
                   </div>
