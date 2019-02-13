@@ -325,10 +325,16 @@
                <!-- Navigation -->
                <div class="android-navigation-container">
                   <nav class="android-navigation mdl-navigation">
+ <a class="mdl-navigation__link mdl-typography--text-uppercase"href="https://ademi.org.ar/blog/desarrollo-local/actividades/" style="color: #465b2a;"><!-- Number badge -->
+<span class="mdl-badge" data-badge="1">Concurso</span>
+</a>
+
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/">INICIO</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/">NOTICIAS</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/calendario/">CALENDARIO</a>
                      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
+
+<a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://translate.google.com/translate?depth=1&hl=es&rurl=translate.google.com.ar&sl=es&sp=nmt4&tl=en&u=https://www.ademi.org.ar/&xid=17259,15700023,15700186,15700190,15700248">English</a>
                   </nav>
                </div>
                <span class="android-mobile-title mdl-layout-title">
@@ -340,6 +346,7 @@
          </div>
          <div class="android-drawer mdl-layout__drawer">
             <nav class="mdl-navigation">
+<a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://ademi.org.ar/blog/desarrollo-local/actividades/" style="color: #465b2a;">CONCURSO</a>
                <a class="mdl-navigation__link" href="https://ademi.org.ar/">INICIO</a>
                <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/institucional/">INSTITUCIONAL</a>
                <a class="mdl-navigation__link" href="https://ademi.org.ar/blog/emprendedores/">EMPRENDEDORES</a>
@@ -544,8 +551,7 @@
                   </div>
                   <div class="mdl-card__actions">
                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/agenciaademi" data-upgraded=",MaterialButton">
-                     SEGINOS
-                      
+                     SEGUINOS
                      </a>
                   </div>
                </div>
@@ -563,26 +569,6 @@
     </ul>   
 </center>
             <footer class="android-footer mdl-mega-footer">
-
-
-
-<!-- Textfield with Floating Label -->
-
-<form style="text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=fundacionademi', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" name="email">
-    <input type="hidden" value="fundacionademi" name="uri"/>
-      <input type="hidden" name="loc" value="es_ES"/>
-      <!-- Accent-colored raised button with ripple -->
-
-     
-    <label class="mdl-textfield__label" for="sample3">Ingresa tu correo electronico</label>
-  </div>
-<button class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-color--accent" style="    color: #fff;" value="Subscribe" type="submit">suscribirse</button>
-</form>
-
-
-
                <div class="mdl-mega-footer--middle-section">
                   <p class="mdl-typography--font-light">© Copyright 2018 | Fundación ADEMI - Agencia Para El Desarrollo Económico de Misiones</p>
                </div>
@@ -601,4 +587,3 @@
       <script src="material.min.js"></script>
    </body>
 </html>
-
